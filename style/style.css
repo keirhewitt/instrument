@@ -18,11 +18,11 @@
     --font-weight-body-small: 300;
 
     --font-logo-size: 24px;
-    --font-heading-size: 90px;
-    --font-subheading-size: 42px;
+    --font-heading-size: 120px;
+    --font-subheading-size: 48px;
     --font-nav-link-size: 16px;
     --font-body-text-size: 18px;
-    --font-btn-size: 18px;
+    --font-btn-size: 14px;
 }
 
 *, *::before, *::after {
@@ -34,11 +34,6 @@ body {
     padding: 0;
     background-color: var(--colour-background); /* Black background */
     color: var(--colour-text);  /* White Text */
-}
-
-/* **Placeholder CSS for creating sections */
-section {
-    height: 1000px;
 }
 
 /* Main website container */
@@ -94,14 +89,13 @@ section {
 
 /* Section 1 || Hero Section */
 .hero__section {
-    background-color: rgba(218, 218, 218, 0.3);
+    height: 1300px;
     display: flex;
     flex-direction: column;
 }
 
 .hero__main {
-    background-color: rgba(240, 128, 128, 0.3);
-    height: 500px;
+    height: 700px;
     width: 100%;
     text-align: left;
     display: flex;
@@ -123,7 +117,13 @@ section {
 }
 
 #hero__description {
-    width: 45%;
+    width: 600px;
+}
+
+.hero__btn__wrapper {
+    display: flex;
+    height: 100px;
+    align-items: center;
 }
 
 .btn--link {
@@ -137,19 +137,145 @@ section {
     justify-content: center;
     text-align: center;
     width: 170px;
-    height: 40px;
-    border-radius: 30%;
+    height: 52px;
+    border-radius: 50px;
     border: none;
 }
 
 
 .hero__embedded-video {
-    height: 500px;
+    height: 700px;
     width: 100%;
     background-color: rgba(138, 163, 209, 0.3);
+    margin: 10px auto;
 
     /* TEMPORARY */
     display:flex;
     align-items: center;
     justify-content: center;
 }
+/* || */
+
+
+/* Section 2 || Application of tech section */
+.application__section {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text__subheading {
+    font-family: var(--font-body);
+    font-size: var(--font-subheading-size);
+    font-weight: var(--font-weight-body);
+    text-align: center;
+}
+
+#application__main__heading {
+    width: 700px;
+}
+/* || */
+
+/* Section 3 || Acivities and information section */
+.activities__info__section {
+    height: 1300px;
+}
+
+.activities__grid__container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.grid__cell__image {
+    display: flex;
+    align-items: center;
+}
+
+#grid__row-1--image, #grid__row-3--image {
+    justify-content: start;
+}
+
+#grid__row-2--image{
+    justify-content: end;
+}
+
+.grid__image__container {
+    width: 450px;
+    height: 350px;
+    background-color: rgba(138, 163, 209, 0.3);
+}
+
+.grid__cell__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid__text__inner__container {
+    width: 400px;
+}
+
+#grid__image__1,
+#grid__image__2,
+#grid__image__3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#grid__image__1 { background-image: url("../images/1.jpg"); }
+#grid__image__2 { background-image: url("../images/2.jpg"); }
+#grid__image__3 { background-image: url("../images/3.jpg"); }
+
+/* Row 1 + 3 */
+#grid__row-1--image,
+#grid__row-3--image {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#grid__row-1--text,
+#grid__row-3--text {
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+/* Row 2 */
+#grid__row-2--image {
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+#grid__row-2--text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+/* || */
+
+/* Section 4 || Explore our projects section */
+.explore__projects__section {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore__container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 550px;
+    justify-content: center;
+}
+
+.explore__btn__wrapper {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* || */
