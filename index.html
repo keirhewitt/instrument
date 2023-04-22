@@ -65,7 +65,7 @@
 
                 <!-- Figure this out later, just style width and height -->
                 <div class="hero__embedded-video">
-                    <h2>Video goes here.</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tUrSybDVcTM?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
 
             </section>
@@ -194,7 +194,7 @@
 
                     <div class="brand__campaign__levi">
                         <!-- TODO: Insert image -->
-                        <img />
+                        <div class="brand__image" id="brand__image__levi"></div>
                         <h3 class="brand__campaign__title">Levi's</h3>
                         <small class="brand__campaign__description" id="brand__campaign__description__levi">
                             We partnered with Levi's, an icon of American industry and
@@ -205,7 +205,7 @@
 
                     <div class="brand__campaign__dropbox">
                         <!-- TODO: Insert image -->
-                        <img />
+                        <div class="brand__image" id="brand__image__dropbox"></div>
                         <h3 class="brand__campaign__title">Dropbox Brand Campaign</h3>
                         <small class="brand__campaign__description" id="brand__campaign__description__dropbox">
                             Dropbox is on a path to becoming a multi-product company.
@@ -221,31 +221,33 @@
 
             <!-- Section 6 || Contact Us section -->
             <section class="get__in__touch__section">
-                <div class="current__partners__container">
-                    <div class="current__partner--1">
-                        <!-- 
-                            TODO: Insert company SVG 
-                        -->
+                <div class="partners__wrapper">
+                    <div class="current__partners__container">
+                        <div class="partner__logo" id="current__partner--1">
+                            
+                        </div>
+                        <div class="partner__logo" id="current__partner--2">
+                            <!-- 
+                                TODO: Insert company SVG 
+                            -->
+                        </div>
+                        <div class="partner__logo" id="current__partner--3">
+                            <!-- 
+                                TODO: Insert company SVG 
+                            -->
+                        </div>
                     </div>
-                    <div class="current__partner--2">
-                        <!-- 
-                            TODO: Insert company SVG 
-                        -->
-                    </div>
-                    <div class="current__partner--3">
-                        <!-- 
-                            TODO: Insert company SVG 
-                        -->
-                    </div>
-                </div>
 
-                <div class="contact__us__container">
-                    <h2 class="text__subheading" id="contact__us__heading">We'd love to be your partner</h2>
+                    <div class="contact__us__container">
+                        <h2 class="text__subheading" id="contact__us__heading">We'd love to be your partner</h2>
 
-                    <!-- TODO: Insert ASCII arrow here -->
-                    <a href="#" class="btn--link" id="get__in__touch--link">
-                        Get in touch → <!-- INSERT HERE -->
-                    </a>
+                        <!-- TODO: Insert ASCII arrow here -->
+                        <div class="contact__us__link">
+                            <a href="#" class="btn--link" id="get__in__touch--link">
+                                Get in touch → <!-- INSERT HERE -->
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- || -->
@@ -253,22 +255,22 @@
             <!-- Footer -->
             <footer class="footer__container">
                 <div class="footer__left__menu">
-                    <div class="col1__row1">HOME</div>
-                    <div class="col2__row1">BEING HERE</div>
-                    <div class="col1__row2">WHAT WE DO</div>
-                    <div class="col2__row2">CAREERS</div>
-                    <div class="col1__row3">WORK</div>
-                    <div class="col2__row3">CONTACT</div>
-                    <div class="col1__row4">WHO WE ARE</div>
-                    <div class="col2__row4">PRIVACY</div>
+                    <a href="#" class="footer__cell active" id="col1__row1">HOME</a>
+                    <a href="#" class="footer__cell" id="col2__row1">BEING HERE</a>
+                    <a href="#" class="footer__cell" id="col1__row2">WHAT WE DO</a>
+                    <a href="#" class="footer__cell" id="col2__row2">CAREERS</a>
+                    <a href="#" class="footer__cell" id="col1__row3">WORK</a>
+                    <a href="#" class="footer__cell" id="col2__row3">CONTACT</a>
+                    <a href="#" class="footer__cell" id="col1__row4">WHO WE ARE</a>
+                    <a href="#" class="footer__cell" id="col2__row4">PRIVACY</a>
                 </div>
 
                 <div class="links__newsletter__container">
-                    <a href="#" class="btn--link" id="newsletter--link">NEWSLETTER</a>
-                    <div class="socials__links">
-                        <div class="instagram__link"></div>
-                        <div class="twitter__link"></div>
-                        <div class="linkedin__link"></div>
+                    <a href="#" class="btn--link" id="newsletter--link">NEWSLETTER →</a>
+                    <div class="socials__links__container">
+                        <a href="#" class="socials__link" id="instagram__link"></a>
+                        <a href="#" class="socials__link" id="twitter__link"></a>
+                        <a href="#" class="socials__link" id="linkedin__link"></a>
                     </div>
                 </div>
             </footer>
