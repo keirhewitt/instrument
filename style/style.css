@@ -517,3 +517,34 @@ body {
 #twitter__link {        background-image: url("../images/icons8-twitter-30.png"); }
 #linkedin__link {       background-image: url("../images/icons8-linkedin-30.png"); }
 /* || */
+
+
+
+/* MEDIA QUERIES */
+
+/* Section 5 || Brand Campaigns section */
+@media screen and (max-width: 1300px) {
+    .brand__image {
+        width:  500px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .brand__campaign__container {
+        flex-direction: column;
+    }
+
+    .brand__campaign__levi,
+    .brand__campaign__dropbox {
+        display:            flex;
+        flex-direction:     row;
+    }
+
+    .brand__title__description {
+        max-width: 300px;
+        margin-left: 20px;
+    }
+}
+
+/* || */
