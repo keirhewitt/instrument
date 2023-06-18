@@ -160,7 +160,7 @@ body {
 }
 
 .btn--link {
-    min-width:          170px !important;
+    width: 180px;
     height:             52px;
     border-radius:      50px;
     color:              var(--colour-background);
@@ -223,8 +223,8 @@ body {
 /* Section 3 || Acivities and information section */
 .activities__grid__container {
     height:             100%;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 600px 600px 600px;
+    gap: 3em;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     display:            grid;
 }
 
@@ -255,7 +255,7 @@ body {
 }
 
 .grid__text__inner__container {
-    width:              500px;
+    max-width:              500px;
 }
 
 #grid__image__1,
@@ -341,12 +341,14 @@ body {
 
 /* Section 5 || Brand Campaigns section */
 .brand__campaigns__section {
-    height:             750px;
+    height:             650px;
 }
 .brand__campaign__container {
     height:             100%;
     display:            flex;
     justify-content:    space-between;
+    gap:                3em;
+
 }
 
 .brand__image {
@@ -358,6 +360,7 @@ body {
 .brand__campaign__dropbox {
     display:            flex;
     flex-direction:     column;
+    flex-basis:         50%;
 }
 
 #brand__image__levi {   background-image: url("../images/4.jpg"); }
